@@ -1,0 +1,143 @@
+@import url('https://font.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+#contactme{
+  margin-top: -3em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #222222;
+}
+
+#contactme .ccontainer{
+  width: 100%;
+  max-width: 860px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+#contactme .ccontent h1 {
+  margin-left: 6px;
+  font-size: 5rem;
+  color: #fff;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Roboto';
+  margin-bottom: 10px;
+}
+
+.ccontent p {
+  color: #747474;
+  line-height: 1.6;
+  margin: 3rem 0;
+}
+
+.social {
+  margin-bottom: 25px;
+  margin-left: 10px;
+}
+
+.ccontent .social a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 2rem;
+  transition: color .3s ease;
+  font-size: 1.5rem;
+}
+
+.ccontent .social a:hover {
+  color: crimson;
+}
+
+input, textarea {
+  width: 100%;
+  color: #fff;
+  font-family: "Barlow", sans-serif;
+  font-size: 17px;
+  padding: .75rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgb(82, 82, 82);
+  margin: .8rem 0;
+  border-radius: 2px;
+  background: transparent;
+  resize: vertical;
+  transition: border .3s ease;
+}
+
+input:focus, textarea:focus {
+  border-bottom-color: crimson;
+}
+
+.form .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex>*{
+  flex-basis: 49%;
+}
+
+::placeholder{
+  color: #fff;
+  font-size: 14px;
+}
+
+/* button */
+
+.form button{
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 25px;
+  border: 2px solid #fff; /*border four corners*/
+  text-transform: uppercase;
+  color: #fff; /*text*/
+  background: #222222;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.form button:before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 12px);
+  background: #222222;
+  transition: 0.5s ease-in-out;
+  transform: scaleY(1);
+  transition-delay: 0.5s;
+}
+
+.form button:hover:before {
+  transform: scaleY(0);
+  background: #222222;
+}
+
+.form button:after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% - 12px);
+  background: #222222; /*middle part before*/
+  transition: 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+
+.form button:hover:after {
+  transform: scaleX(0);
+  background: #222222;
+}
+
+.form button span {
+  position: relative;
+  z-index: 3;
+  background: #222222;
+}

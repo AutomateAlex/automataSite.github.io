@@ -1,0 +1,393 @@
+@import url('https://font.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+#Project {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #111;
+}
+
+#Project .bannerVideo {
+    position: absolute;
+    top: 108vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#Project .bannerVideo video {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+}
+
+#Project .bannerVideo video.active {
+    opacity: 1;
+}
+
+.pcontainer {
+    position: relative;
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.pcontainer::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    box-shadow: 10px 0 15px rgba(0, 0, 0, 0.05);
+}
+
+/* firefox has no support of backdrop-filter */
+@supports not (backdrop-filter: none) {
+    .pcontainer::before {
+        background-color: rgba(73, 73, 73, 0.534);
+    }
+}
+
+.pcontainer .pcontent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pcontainer .pcontent .bannerText {
+    position: relative;
+    max-width: 700px;
+}
+
+.pcontainer .pcontent .bannerText div {
+    display: none;
+    transition: 5s ease-in-out;
+}
+
+.pcontainer .pcontent .bannerText div.active {
+    display: initial;
+}
+
+.pcontainer .pcontent .bannerText div h2{
+    color: #fff;
+    font-size: 6em;
+    line-height: 1em;
+    font-weight: 700;
+}
+
+.pcontainer .pcontent .bannerText div p {
+    color: #fff;
+    max-width: 30em;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.WholeVideo {
+    position: absolute;
+    right: 50px;
+    left: 50%;
+    height: 100vh;
+}
+
+.videoClick {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(220, 20, 60, 0);
+}
+
+.videoClick a {
+    display: none;
+    width: 100%;
+    height: 100%;
+    transition: 5s ease-in-out;
+    cursor: url("../https://automatavfx-1306715224.cos.na-siliconvalley.myqcloud.com/assets/icon/play.png"), auto;
+}
+
+.videoClick a.active {
+    display: initial;
+}
+
+.controlleft {
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    display: flex;
+}
+
+.controlright {
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    display: flex;
+}
+
+.controlleft li,
+.controlright li {
+    width: 50px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(133, 133, 133, 0.842);
+    cursor: pointer;
+}
+
+.controlleft li img,
+.controlright li img {
+    width: 40px;
+    height: 40px;
+}
+
+.controlleft li:hover,
+.controlright li:hover {
+    transition: 0.5s ease-in-out;
+    background: rgb(88, 88, 88);
+}
+
+.controlleft li:active,
+.controlright li:active {
+    background: rgb(41, 41, 41);
+}
+
+
+button{
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    border: 2px solid #fff; /*border four corners*/
+    color: #fff; /*text*/
+    background: #29323C;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+button:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background: #29323C;
+    transition: 0.5s ease-in-out;
+    transform: scaleY(1);
+    transition-delay: 0.5s;
+}
+
+button:hover:before {
+    transform: scaleY(0);
+    background: #29323C;
+}
+
+button:after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background: #29323C; /*middle part before*/
+    transition: 0.5s ease-in-out;
+    transform: scaleX(1);
+}
+
+button:hover:after {
+    transform: scaleX(0);
+    background: #29323C;
+}
+  
+button span {
+    position: relative;
+    z-index: 3;
+    background: #29323C;
+}
+
+/* trailer */
+.trailer1 {
+    position: fixed;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background: #29323C;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.trailer1.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.trailer1 video {
+    position: relative;
+    max-width: 900px;
+    outline: none;
+}
+
+/* 2 */
+.trailer2 {
+    position: fixed;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background: #29323C;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.trailer2.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.trailer2 video {
+    position: relative;
+    max-width: 900px;
+    outline: none;
+}
+
+/* 3 */
+.trailer3 {
+    position: fixed;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background: #29323C;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.trailer3.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.trailer3 video {
+    position: relative;
+    max-width: 900px;
+    outline: none;
+}
+
+/* 4 */
+.trailer4 {
+    position: fixed;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background: #29323C;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.trailer4.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.trailer4 video {
+    position: relative;
+    max-width: 900px;
+    outline: none;
+}
+
+.close {
+    position: absolute;
+    top: 12%;
+    right: 12%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+/* width changement with media fonctions */
+
+@media (max-width: 1200px) {
+    .pcontainer .pcontent .bannerText div p {
+        color: #fff;
+        max-width: 25em;
+        font-size: 18px;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .pcontainer .pcontent .bannerText div p {
+        color: #fff;
+        max-width: 20em;
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    .trailer1 video {
+        max-width: 90%;
+    }
+}
+@media (max-width: 750px) {
+    .pcontainer {
+        padding: 20px;
+    }
+    .pcontainer::before {
+        width: 100%;
+    }
+    .pcontainer .pcontent .bannerText div h2 {
+        font-size: 3em;
+    }
+    .pcontainer .pcontent .bannerText div p {
+        font-size: 16px;
+    }
+    .pcontainer .pcontent .bannerText {
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: center;
+    }
+    .WholeVideo {
+        display: none;
+    }
+    .controlleft li,
+    .controlright li {
+        width: 40px;
+        height: 50px;
+    }
+
+    .controlleft li img,
+    .controlright li img {
+        width: 30px;
+        height: 30px;
+    }
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" href="css/load.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  
+  <title>AutoMataVFX</title>
+</head>
+<body>
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero" data-after="Home">
+            <img class="logo"
+            style="object-fit: contain;"
+            src="https://automatavfx-1306715224.cos.na-siliconvalley.myqcloud.com/assets/icon/logo.png" />
+          </a>
+        </div>
+        <div class="nav-list">
+          <!-- hamburger when small screen -->
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#Project" data-after="Projects">Projects</a></li>
+            <li><a href="#contactme" data-after="Contact">Contact</a></li>
+            <li><a href="index.html" style="font-size: 12px;">EN</a></li>
+            <text style="color: #fff; font-size: 12px"> | </text>
+            <li><a href="index_cn.html"style="font-size: 12px;">CN</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+  
+  <!-- Hero Section  -->
+  <section id="hero">
+    <video src="https://automatavfx-1306715224.cos.na-siliconvalley.myqcloud.com/assets/videos/%E5%A4%A9%E6%B0%97%E3%81%AE%E5%AD%90%20CG%20%E5%A4%A9%E6%B0%94%E4%B9%8B%E5%AD%90%20(1).mp4" muted loop autoplay></video>
+    <!-- <div class="overlay"></div> -->
+
+  <!-- Home page Title -->
+    <!-- <div class="hero container">
+      <div>
+        <h1>We are AutoMataVFX<span></span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+        <p>elit. Vitae deserunt incidunt</p>
+      </div>
+    </div> -->
+  </section>
+  <!-- End Hero Section  -->
+  <!-- Project Section -->
+  <section id="Project">
+    <div class="bannerVideo" id="slideShow">
+      <!-- Project1 video -->
+      <video src="https://automatavfx-1306715224.cos.na-siliconvalley.myqcloud.com/assets/videos/%E5%A4%A9%E6%B0%97%E3%81%AE%E5%AD%90%20CG%20%E5%A4%A9%E6%B0%94%E4%B9%8B%E5%AD%90%20(1).mp4" autoplay muted loop class="active"></video>
+      <!-- Project2 video -->
+      <video src="https://automatavfx-1306715224.cos.na-siliconvalley.myqcloud.com/assets/videos/video.mp4" autoplay muted loop></video>
+      <!-- Project3 video -->
+      <video src="https://automatavfx-1306715224.cos.na-siliconvalley.myqcloud.com/assets/videos/video3.mp4" autoplay muted loop></video>
+      <!-- Project4 video -->
+      <video src="https://automatavfx-1306715224.cos.na-siliconvalley.myqcloud.com/assets/videos/video.mp4" autoplay muted loop></video>
+    </div>
+
+    <div class="pcontainer">
+      <div class="pcontent">
+        <div class="bannerText" id="slideShowText">
+          <div class="active">
+            <h2>Project1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente quidem doloremque voluptatum, veniam ratione ducimus natus, ad cum velit in minus. Cupiditate perferendis officiis quo facilis provident. Sit, illum repudiandae.
+            </p>
+          </div>
+          
+          <div>
+            <h2>Project2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente quidem doloremque voluptatum, veniam ratione ducimus natus, ad cum velit in minus. Cupiditate perferendis officiis quo facilis provident. Sit, illum repudiandae.
+            </p>
+          </div>
+          
+          <div>
+            <h2>Project3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente quidem doloremque voluptatum, veniam ratione ducimus natus, ad cum velit in minus. Cupiditate perferendis officiis quo facilis provident. Sit, illum repudiandae.
+            </p>
+          </div>
+          
+          <div>
+            <h2>Project4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente quidem doloremque voluptatum, veniam ratione ducimus natus, ad cum velit in minus. Cupiditate perferendis officiis quo facilis provident. Sit, illum repudiandae.
+            </p>
+          </div>
+          <a href="projects.html">
+            <button><span>More projects</span></button>
+          </a>
+        </div>
+      </div>
+      
+      <div class="WholeVideo">
+        
+        <div class="videoClick" id="clickVideo">
+          <a onclick="toggle1();" class="active"></a>
+          <a onclick="toggle2();"></a>
+          <a onclick="toggle3();"></a>
+          <a onclick="toggle4();"></a>
+        </div>
+      </div>
+      
+      <ul class="controlleft">
+        <li onclick="nextSlide();nextSlideText();nextVideo();"><img src="https://automatavfx-1306715224.cos.na-siliconvalley.myqcloud.com/assets/icon/right.png"></li>
+        
+      </ul>
+      <ul class="controlright">
+        <li onclick="preSlide();preSlideText();preVideo();"><img src="https://automatavfx-1306715224.cos.na-siliconvalley.myqcloud.com/assets/icon/left.png"></li>
+      </ul>
+
+      <div class="trailer1">
+        <video src="https://automatavfx-1306715224.cos.na-siliconvalley.myqcloud.com/assets/videos/video2.mp4" controls="true"></video>
+        <img src="https://automatavfx-1306715224.cos.na-siliconvalley.myqcloud.com/assets/icon/close.png" class="close" onclick="toggle1();">
+      </div>
+      <div class="trailer2">
+        <video src="https://automatavfx-1306715224.cos.na-siliconvalley.myqcloud.com/assets/videos/video.mp4" controls="true"></video>
+        <img src="https://automatavfx-1306715224.cos.na-siliconvalley.myqcloud.com/assets/icon/close.png" class="close" onclick="toggle2();">
+      </div>
+      <div class="trailer3">
+        <video src="https://automatavfx-1306715224.cos.na-siliconvalley.myqcloud.com/assets/videos/video3.mp4" controls="true"></video>
+        <img src="https://automatavfx-1306715224.cos.na-siliconvalley.myqcloud.com/assets/icon/close.png" class="close" onclick="toggle3();">
+      </div>
+      <div class="trailer4">
+        <video src="https://automatavfx-1306715224.cos.na-siliconvalley.myqcloud.com/assets/videos/video4.mp4" controls="true"></video>
+        <img src="https://automatavfx-1306715224.cos.na-siliconvalley.myqcloud.com/assets/icon/close.png" class="close" onclick="toggle4();">
+      </div>
+    </div>
+
+  </section>
+  <!-- End Project Section -->
+  <!-- Contact Section -->
+  <section id="contactme">
+    <div class="ccontainer">
+      <div class="ccontent">
+        <h1>Contact us</h1>
+        <!-- icons -->
+        <div class="social">
+          <a href="yaoyuanvfx@gmail.com" title="yaoyuanvfx@gmail.com"><i class="fa fa-envelope-o"></i></a>
+          <a href="https://vimeo.com/user85721650"><i class="fa fa-vimeo"></i></a>
+          <a href="yaoyuan0530" title="yaoyuan0530"><i class="fa fa-weixin "></i></a>
+        </div>
+        <!-- icons end -->
+      </div>
+      <div class="form">
+        <form action="https://formsubmit.co/yaoyuanvfx@gmail.com" method="POST">
+          <div class="flex">
+            <input type="text" name="name" required placeholder="Your Name">
+            <input type="email" name="email" required placeholder="Your Email">
+            <input type="hidden" name="_next" value="https://www.automatavfx.com/#contactme">
+          </div>
+          <input type="text" name="subject" required placeholder="Your Subject">
+          <textarea name="message" required cols="30" rows="8" placeholder="Your Message"></textarea>
+          <button type="submit"><span>Send</span></button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div>
+        <a href="#hero" data-after="Home">
+          <img style="width: 80px; height: 80px;object-fit: contain;" src="https://automatavfx-1306715224.cos.na-siliconvalley.myqcloud.com/assets/icon/logo.png" />
+        </a>
+      </div>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><i class="fa fa-envelope-o"></i></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><i class="fa fa-vimeo"></i></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><i class="fa fa-wechat"></i></a>
+        </div>
+      </div>
+      <p>Copyright @2021 AutoMataVFX</p>
+      <p>Built by <a href="https://www.yuhui-xu.com/">Yuhui</a></p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  
+  <script src="./Js/app.js"></script>
+  <script src="Js/load.js"></script>
+  <script>
+    const slideShow = document.getElementById('slideShow');
+    const slides = slideShow.getElementsByTagName('video');
+    var index = 0;
+
+    function nextSlide() {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }
+    function preSlide() {
+      slides[index].classList.remove('active');
+      index = (index - 1 + slides.length) % slides.length;
+      slides[index].classList.add('active');
+    }
+  </script>
+  <script>
+    const slideShowText = document.getElementById('slideShowText');
+    const slidesT = slideShowText.getElementsByTagName('div');
+    var i = 0;
+
+    function nextSlideText() {
+      slidesT[i].classList.remove('active');
+      i = (i + 1) % slidesT.length;
+      slidesT[i].classList.add('active');
+    }
+    function preSlideText() {
+      slidesT[i].classList.remove('active');
+      i = (i - 1 + slidesT.length) % slidesT.length;
+      slidesT[i].classList.add('active');
+    }
+  </script>
+  <script>
+    const slideVideo = document.getElementById('clickVideo');
+    const slidesV = slideVideo.getElementsByTagName('a');
+    var a = 0;
+
+    function nextVideo() {
+      slidesV[a].classList.remove('active');
+      a = (a + 1) % slidesV.length;
+      slidesV[a].classList.add('active');
+    }
+    function preVideo() {
+      slidesV[a].classList.remove('active');
+      a = (a - 1 + slidesV.length) % slidesV.length;
+      slidesV[a].classList.add('active');
+    }
+  </script>
+  <script>
+    function toggle1(){
+      var trailer1 = document.querySelector(".trailer1")
+      trailer1.classList.toggle("active")
+    }
+    function toggle2(){
+      var trailer1 = document.querySelector(".trailer2")
+      trailer1.classList.toggle("active")
+    }
+    function toggle3(){
+      var trailer1 = document.querySelector(".trailer3")
+      trailer1.classList.toggle("active")
+    }
+    function toggle4(){
+      var trailer1 = document.querySelector(".trailer4")
+      trailer1.classList.toggle("active")
+    }
+  </script>
+</body>
+</html>
