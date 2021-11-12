@@ -90,14 +90,9 @@ p {
 	padding: 0 10px;
 }
 
-#header .nav-bar .brand {
-	margin-right: 60%;
-}
-#header .nav-bar .brandy {
-	margin-right: 68%;
-}
 #header .nav-bar .brand .logo{
 	margin-top: 10px;
+	margin-left: 70px;
 	width: 60px;
 	height: 60px;
 	object-fit: contain;
