@@ -225,3 +225,78 @@ div {
     width: 30px;
     height: 30px;
 }
+
+/* 5 */
+
+.trailer5 {
+    position: fixed;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background: #29323c31;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.trailer5.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.trailer5 video {
+    position: relative;
+    max-width: 900px;
+    outline: none;
+}
+
+.close {
+    position: absolute;
+    top: 12%;
+    right: 12%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+/* 6 */
+.trailer6 {
+    position: fixed;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background: #29323c31;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.trailer6.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.trailer6 video {
+    position: relative;
+    max-width: 900px;
+    outline: none;
+}
+
+.close {
+    position: absolute;
+    top: 12%;
+    right: 12%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
