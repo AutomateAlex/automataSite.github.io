@@ -1,0 +1,163 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+p {
+	color: black;
+	font-size: 1.4rem;
+	margin-top: 5px;
+	line-height: 2.5rem;
+	font-weight: 300;
+	letter-spacing: .05rem;
+}
+
+.section {
+    height: 100vh;
+}
+
+#home,
+#video1,
+#video2,
+#video3 {
+    background-size: cover;
+	background-color: black;
+	background-position: top center;
+	position: relative;
+	z-index: 0.9;
+	height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+#home {
+    height: 80vh;
+    justify-content: end;
+}
+
+#video2 {
+    justify-content: end;
+}
+
+#home video,
+#video1 video,
+#video2 video,
+#video3 video {
+    position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 98%;
+	object-fit: cover;
+	opacity: 0.99;
+	z-index: 0;
+}
+
+.subPage {
+	z-index: 2;
+	color: white;
+    max-width: 30%;
+}
+
+.subPage a h1{
+    color: white;
+    font-weight: bolder;
+    font-size: 5.5rem;
+    mix-blend-mode: hard-light;
+    letter-spacing: 8px;
+    max-height: 50%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.subPage h3{
+    color: white;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 29px;
+    mix-blend-mode: hard-light;
+    line-height: 3rem;
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+.subPage a img {
+    width: 70px;
+    height: 70px;
+}
+
+.left {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.right {
+    text-align: right;
+    margin-right: 10%;
+}
+
+/* End Keyframes */
+.nav {
+    /* padding: 14px; */
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-item {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+
+.nav-link:hover ~ .nav-label {
+    opacity: 1;
+}
+
+.nav-label {
+    color: #d6a458;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.nav-link {
+    background-color: white;
+    border-radius: 50%;
+    border-color: black;
+    height: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform 0.1s;
+    width: 12px;
+}
+
+.nav-link-selected {
+    background: #d6a458 ;
+}
