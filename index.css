@@ -107,6 +107,7 @@ p {
     line-height: 3rem;
     margin-bottom: 30px;
     user-select: none;
+    max-width: 70%;
 }
 
 .subPage a img {
